@@ -1,24 +1,25 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import NavBar from './pages/Shared/NavBar';
+import Appointment from './pages/Appointment/Appointment';
+import Reviews from './pages/Reviews/Reviews';
+import ContactUs from './pages/ContactUs/ContactUs';
+import Login from './pages/Login/Login';
 
 function App() {
   return (
     <div className="App">
-      <button class="btn">Button</button>
-      <button class="btn btn-primary">Button</button>
-      <button class="btn btn-secondary">Button</button>
-      <button class="btn btn-accent">Button</button>
-      <button class="btn btn-ghost">Button</button>
-      <button class="btn btn-link">Button</button>
-      <div class="card card-compact w-96 bg-base-100 shadow-xl">
-        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-        <div class="card-body">
-          <h2 class="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
-      </div>
+      <NavBar></NavBar>
+      <Routes>
+        <Route path='/' element={<Home></Home>}>Home</Route>
+        <Route path='/about' element={<About></About>}>About</Route>
+        <Route path='/appointment' element={<Appointment></Appointment>}>Appointment</Route>
+        <Route path='/reviews' element={<Reviews></Reviews>}>Reviews</Route>
+        <Route path='/contactus' element={<ContactUs></ContactUs>}>Contact Us</Route>
+        <Route path='/login' element={<Login></Login>}>Login</Route>
+      </Routes>
     </div>
   );
 }
