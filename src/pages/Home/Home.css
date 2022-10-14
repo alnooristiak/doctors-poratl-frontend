@@ -28,3 +28,14 @@
     width: 50vh;
     height: 60vh;
 }
+/* doctor/ get appointment  */
+.doctor-bg{
+    background-image: url(../../assets/images/appointment.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.doctor-bg img{
+    width: 50vh;
+    height: 60vh;
+}
