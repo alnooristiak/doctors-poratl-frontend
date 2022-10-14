@@ -8,7 +8,7 @@
 .min-h-screen {
     min-height: 80vh;
 }
-/* Hero Bottom Card  */
+/* Hero Bottom Card css */
 .hb-card{
     transition-duration: 0.5s;
     background-color: #19D3AE;
@@ -22,4 +22,9 @@
 }
 .hb-card-hover:hover{
     background-color: #19D3AE;
+}
+/* Exceptional Dental css  */
+.exception-d-img img{
+    width: 50vh;
+    height: 60vh;
 }
