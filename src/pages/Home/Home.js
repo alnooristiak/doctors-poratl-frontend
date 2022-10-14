@@ -1,9 +1,15 @@
 import React from 'react';
+import HeroBotomCard from './HeroBotomCard';
+import HeroSec from './HeroSec';
+import './Home.css';
+import OurServices from './OurServices';
 
 const Home = () => {
     return (
         <div>
-            <h1>this is home page</h1>
+            <HeroSec></HeroSec>
+            <HeroBotomCard></HeroBotomCard>
+            <OurServices></OurServices>
         </div>
     );
 };

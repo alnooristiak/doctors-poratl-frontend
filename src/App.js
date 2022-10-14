@@ -10,10 +10,11 @@ import Login from './pages/Login/Login';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NavBar></NavBar>
       <Routes>
         <Route path='/' element={<Home></Home>}>Home</Route>
+        <Route path='/home' element={<Home></Home>}>Home</Route>
         <Route path='/about' element={<About></About>}>About</Route>
         <Route path='/appointment' element={<Appointment></Appointment>}>Appointment</Route>
         <Route path='/reviews' element={<Reviews></Reviews>}>Reviews</Route>
