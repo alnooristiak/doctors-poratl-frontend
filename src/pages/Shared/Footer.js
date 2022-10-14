@@ -1,8 +1,9 @@
 import React from 'react';
+import './Shared.css';
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-base-200 text-base-content">
+        <footer className="footer p-10 text-base-content footer-bg">
             <div>
                 <h3>DoctorS PortaL</h3>
                 <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
