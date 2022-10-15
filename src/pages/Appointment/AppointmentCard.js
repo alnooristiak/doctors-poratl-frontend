@@ -1,7 +1,9 @@
 import React from 'react';
 
 const AppointmentCard = ({ service, setTreatment }) => {
+
     const { _id, name, slots } = service;
+
     return (
         <div class="lg:card-side shadow-xl bg-accent p-3 hb-card">
             <h5>
@@ -33,6 +35,7 @@ const AppointmentCard = ({ service, setTreatment }) => {
                 >Maka Appointment</button> */}
 
                 <label disabled={slots.length === 0} 
+                onClick={()=> setTreatment(service)}
                 for="book-modal" 
                 class="btn modal-button"
                 >Maka Appointment</label>
