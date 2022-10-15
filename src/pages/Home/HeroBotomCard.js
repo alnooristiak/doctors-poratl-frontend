@@ -8,7 +8,7 @@ const HeroBotomCard = () => {
     return (
         <div className="grid-cols-1 grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-5 text-white p-5 bg-white pt-7">
             {/* heroB cart 03  */}
-            <div class="card lg:card-side bg-base-100 shadow-xl bg-accent p-3 hb-card">
+            <div class="card lg:card-side shadow-xl bg-accent p-3 hb-card">
                 <figure><img src={clock} alt="Album" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">Opening Hours</h2>

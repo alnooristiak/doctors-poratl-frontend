@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import chair from '../../assets/images/chair.png'
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
-import { format } from 'date-fns';
+// import { format } from 'date-fns';
 import Appointments from './Appointments';
 
 const Appointment = () => {
@@ -20,9 +20,7 @@ const Appointment = () => {
                             mode="single"
                             selected={date}
                             onSelect={setDate}
-                        // footer={footer}
                         />
-                        {/* <h5>you have selected date {format(date, 'PP')}</h5> */}
                     </div>
                 </div>
             </div>
