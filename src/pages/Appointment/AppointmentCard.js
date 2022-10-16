@@ -34,12 +34,12 @@ const AppointmentCard = ({ service, setTreatment }) => {
                 className='btn btn-warning text-white'
                 >Maka Appointment</button> */}
 
-                <label disabled={slots.length === 0} 
-                onClick={()=> setTreatment(service)}
-                for="book-modal" 
-                class="btn modal-button"
+                <label disabled={slots.length === 0}
+                    onClick={() => setTreatment(service)}
+                    for="book-modal"
+                    class="btn modal-button"
                 >Maka Appointment</label>
-        </div>
+            </div>
         </div >
     );
 };
