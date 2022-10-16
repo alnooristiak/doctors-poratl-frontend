@@ -29,10 +29,10 @@ const BookModal = ({ treatment, date, setTreatment }) => {
                         {/* options  */}
                         <select name='slot' class="select select-accent w-full max-w-xs">
                             {
-                                slots.map(slot => <option 
+                                slots.map(slot => <option
                                     name='slot'
                                     value={slot}
-                                    >{slot}</option>)
+                                >{slot}</option>)
                             }
                         </select>
 

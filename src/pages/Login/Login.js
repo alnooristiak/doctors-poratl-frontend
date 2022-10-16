@@ -2,8 +2,18 @@ import React from 'react';
 
 const Login = () => {
     return (
-        <div>
-            <h2>th is is login page user can login this section</h2>
+        <div className='flex justify-center'>
+            <form>
+                <input type="name" placeholder="Type here" class="input input-bordered input-success w-full max-w-xs" />
+                <br />
+                <br />
+
+                <input type="email" placeholder="Type here" class="input input-bordered input-success w-full max-w-xs" />
+                <br />
+                <br />
+
+                <input type="submit" placeholder="Type here" class="input input-bordered input-success w-full max-w-xs" />
+            </form>
         </div>
     );
 };
