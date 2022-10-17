@@ -5,12 +5,12 @@ const AppointmentCard = ({ service, setTreatment }) => {
     const { _id, name, slots } = service;
 
     return (
-        <div class="lg:card-side shadow-xl bg-accent p-3 hb-card">
+        <div className="lg:card-side shadow-xl bg-accent p-3 hb-card">
             <h5>
                 <strong>ID:</strong>{_id}
             </h5>
             <div>
-                <h2 class="card-title">
+                <h2 className="card-title">
                     <strong>Doctor Name:</strong>{name}
                 </h2>
                 <p>
@@ -24,7 +24,7 @@ const AppointmentCard = ({ service, setTreatment }) => {
                     {slots.length} {slots.length > 1 ? 'spaces' : 'space'} sloth are avle able.
                 </p>
             </div>
-            <div class="">
+            <div className="">
                 <p>
                     <strong>Slots:</strong> {slots}
                 </p>
@@ -37,7 +37,7 @@ const AppointmentCard = ({ service, setTreatment }) => {
                 <label disabled={slots.length === 0}
                     onClick={() => setTreatment(service)}
                     for="book-modal"
-                    class="btn modal-button"
+                    className="btn modal-button"
                 >Maka Appointment</label>
             </div>
         </div >
