@@ -79,11 +79,13 @@ const Login = () => {
                         />
                         {/* {errors.password?.type === 'required' && <p className='text-red-600' role="alert">First name is required</p>} */}
 
-                        <input className='btn bg-green-600 font-bold text-white' type="submit" />
+
+                        <br />   <br />    
+                        <input className='btn bg-green-600 font-bold text-white' type="submit" value="signin" />
                     </form>
                 
         
-                    <span>New to Doctors Portal?</span> <Link className='text-green-600' to="/createaccount">Create new account</Link>
+                    <span className='text-green-600'>New to Doctors Portal? </span> <Link className='text-green-400' to="/register">Create new account</Link>
                     <div>-------- OR --------</div>
                     <button 
                     onClick={(event) => signInWithGoogle(event.preventDefault())}
