@@ -2,7 +2,7 @@ import React from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
-// import Loading from '../Shared/Loading';
+import Loading from '../Shared/Loading';
 import { Link, useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
@@ -21,9 +21,9 @@ const SignUp = () => {
 
     let signInError;
 
-    // if (loading || gLoading || updating) {
-    //     return <Loading></Loading>
-    // }
+    if (loading || gLoading || updating) {
+        return <Loading></Loading>
+    }
 
     if (error || gError || updateError) {
         signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>

@@ -9,6 +9,7 @@ import ContactUs from './pages/ContactUs/ContactUs';
 import Login from './pages/Login/Login';
 import Footer from './pages/Shared/Footer';
 import SignUp from './pages/Login/SignUp';
+import RequirAuth from './pages/Login/RequirAuth';
 
 function App() {
   return (
@@ -16,13 +17,17 @@ function App() {
       <NavBar></NavBar>
       <Routes>
         <Route path='/' element={<Home></Home>}>Home</Route>
-        <Route path='/home' element={<Home></Home>}>Home</Route>
-        <Route path='/about' element={<About></About>}>About</Route>
-        <Route path='/appointment' element={<Appointment></Appointment>}>Appointment</Route>
-        <Route path='/reviews' element={<Reviews></Reviews>}>Reviews</Route>
-        <Route path='/contactus' element={<ContactUs></ContactUs>}>Contact Us</Route>
-        <Route path='/login' element={<Login></Login>}>Login</Route>
-        <Route path='/register' element={<SignUp></SignUp>}>Register</Route>
+        <Route path='home' element={<Home></Home>}>Home</Route>
+        <Route path='about' element={<About></About>}>About</Route>
+        <Route path='appointment' element={
+          <RequirAuth>
+            <Appointment/>
+          </RequirAuth>
+        }></Route>
+        <Route path='reviews' element={<Reviews></Reviews>}>Reviews</Route>
+        <Route path='contactus' element={<ContactUs></ContactUs>}>Contact Us</Route>
+        <Route path='login' element={<Login></Login>}>Login</Route>
+        <Route path='signup' element={<SignUp></SignUp>}>SignUp</Route>
       </Routes>
       <Footer></Footer>
     </div>
